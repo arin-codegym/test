@@ -1,0 +1,35 @@
+<body>
+<div class="container" >
+  <table id="customers">
+    <tr>
+      <th>Stt</th>
+      <th>Tên phòng</th>
+      <th>Tầng</th>
+      <th>Khu vực</th>
+      <th>Trạng thái</th>
+      <th>Loại phòng</th>
+      <th>Sức chứa</th>
+      <th>CHi tiết</th>
+      <th>Sửa</th>
+      <th>Xóa</th>
+    </tr>
+    <tr *ngFor="let room of roomList, let i = index">
+      <td>{{i+1}}</td>
+      <td>{{room.nameRoom}}</td>
+      <td>{{room.floor}}</td>
+      <td>{{room.region.name}}</td>
+      <td>{{room.status.name}}</td>
+      <td>{{room.roomType.name}}</td>
+      <td>{{room.capacity}}</td>
+      <td>
+        <a href=""><i class="fa fa-eye"></i></a>
+      </td>
+      <td><a (click)="openDialog(room)"><i class="fa fa-edit"></i></a></td>
+      <td><a href="#"><i class="fa fa-trash-alt"></i></a></td>
+    </tr>
+
+  </table>
+</div>
+</body>
+
+

@@ -1,0 +1,62 @@
+<form [formGroup]="roomForm">
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Tên phòng</mat-label>
+      <input matInput placeholder="Placeholder">{{room.nameRoom}}
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Tầng</mat-label>
+      <input matInput placeholder="Placeholder">{{room.floor}}
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill"
+                    [hideRequiredMarker]="hideRequiredControl.value"
+                    [floatLabel]="floatLabelControl.value">
+      <mat-select [(value)]="room.region.name">
+        <mat-option>-- None --</mat-option>
+        <mat-option *ngFor="let region of regionList" value="{{region.name}}">{{region.name}}</mat-option>
+      </mat-select>
+      <mat-label><b> Khu Vực</b></mat-label>
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Sức chứa</mat-label>
+      <input matInput placeholder="Placeholder">{{room.capacity}}
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="fill"
+                    [hideRequiredMarker]="hideRequiredControl.value"
+                    [floatLabel]="floatLabelControl.value">
+      <mat-select required [(value)]="room.roomType.name">
+        <mat-option>-- None --</mat-option>
+        <mat-option *ngFor="let type of roomTypeList" value="{{type.name}}">{{type.name}}</mat-option>
+      </mat-select>
+      <mat-label><b> Loại phòng</b></mat-label>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Hình ảnh</mat-label>
+      <!--    <input matInput placeholder="Placeholder">-->
+      <!--    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>-->
+      <mat-hint>Hint</mat-hint>
+      <ngx-mat-file-input matInput placeholder="Hình ảnh" multiple></ngx-mat-file-input>
+      <mat-icon matSuffix>folder</mat-icon>
+    </mat-form-field>
+  </p>
+  <p>
+    <button>Chon tài sản</button>
+  </p>
+</form>

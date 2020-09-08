@@ -1,0 +1,100 @@
+
+@media (min-width: 640px) {
+  .navbar-nav > li {
+    float: left;
+    border-left: ridge;
+  }
+  .navbar-nav > li > a {
+    color: rgb(238, 159, 31)!important;
+  }
+}
+
+@media (min-width: 640px) {
+  .edit{
+    width: 852px;
+    margin-left: 417px;
+    font-size: 24px;
+    background-color: rgb(238, 159, 31);
+  }
+
+}
+.input-edit{
+  margin-left: 100px;
+}
+
+.nav {
+  font-size: 37px;
+  padding-left: 0px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+.div-nav {
+  border: 1px solid;
+  margin-left: 54px;
+  margin-right: 60px;
+  padding: 10px;
+  box-shadow: 5px 5px rgb(238, 159, 31);
+
+
+}
+div>input{
+  width: 100%;
+}
+
+.input-label {
+  width: 150px;
+  margin-left: 5px;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+.form-control{
+  width: 60%;
+}
+.option{
+  position: absolute;
+  margin-top: -27px;
+  margin-left: 13%;
+}
+.col-md-1{
+  width: 30%;
+}
+.col-sm-3{
+  width: 90px;
+}
+.col-lg-8{
+  margin-top: 83px;
+  width: 59.666667%;
+}

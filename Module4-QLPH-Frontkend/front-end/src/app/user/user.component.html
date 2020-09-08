@@ -1,0 +1,11 @@
+<nav mat-tab-nav-bar [style.background]="background" >
+  <a mat-tab-link *ngFor="let link of links;let i=index;first as isFirst"
+     (click)="activeLink = link"
+     [active]="activeLink == link"> {{link}} </a>
+  <a mat-tab-link disabled>Admin</a>
+</nav>
+<router-outlet></router-outlet>
+
+
+
+
